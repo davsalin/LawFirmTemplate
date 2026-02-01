@@ -29,434 +29,375 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
 
 {% block body %}
 
-    <!-- ============================================ -->
-    <!--                    Hero                      -->
-    <!-- ============================================ -->
-
-    <section id="hero-143">
-        <div class="cs-container">
-            <span class="cs-topper">CodeStitch Presents</span>
-            <h1 class="cs-title">
-                The Intermediate Website Kit (LESS)
-            </h1>
-            <p class="cs-text">
-                Building faster websites, faster. Just clone, update _data/client.js, swap out some sections, and away you go!
-            </p>
-            <a href="/contact/" class="cs-button-solid">Get in Touch</a>
-        </div>
-
-        <!-- Background Image -->
-        <picture class="cs-background">
-            <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 640, height: 1490 }) | avif %}" type="image/avif">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 640, height: 1490 }) | webp %}" type="image/webp">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 640, height: 1490 }) | jpeg %}" type="image/jpeg">
-            <!--Tablet Image-->
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 2048, height: 1922 }) | avif %}" type="image/avif">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 2048, height: 1922 }) | webp %}" type="image/webp">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 2048, height: 1922 }) | jpeg %}" type="image/jpeg">
-            <!--Large Tablet Image-->
-            <source media="(min-width: 1024px) and (max-width: 1300px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 2048, height: 1922 }) | avif %}" type="image/avif">
-            <source media="(min-width: 1024px) and (max-width: 1300px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 2048, height: 1922 }) | webp %}" type="image/webp">
-            <source media="(min-width: 1024px) and (max-width: 1300px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 2048, height: 1922 }) | jpeg %}" type="image/jpeg">
-            <!--Desktop Image-->
-            <source media="(min-width: 1300px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 1, height: 1 }) | avif %}" type="image/avif">
-            <source media="(min-width: 1300px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 1, height: 1 }) | webp %}" type="image/webp">
-            <source media="(min-width: 1300px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 1, height: 1 }) | jpeg %}" type="image/jpeg">
-            <img src="{% getUrl "/assets/images/landing.jpg" | resize({ width: 1, height: 1 }) | jpeg %}" alt="kitchen" width="1" height="1" loading="eager" decoding="async">
-        </picture>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                   Services                   -->
-    <!-- ============================================ -->
-
-    <section id="h-services-143">
-        <ul class="cs-card-group">
-            <li class="cs-item">
-                <picture class="cs-icon">
-                    <img loading="lazy" decoding="async" src="/assets/svgs/s1.svg" alt="icon" width="52" height="52" aria-hidden="true">
-                </picture>
-                <h2 class="cs-title">
-                    Full Kitchen Remodel
-                </h2>
-                <p class="cs-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-            </li>
-            <li class="cs-item">
-                <picture class="cs-icon">
-                    <img loading="lazy" decoding="async" src="/assets/svgs/s2.svg" alt="icon" width="52" height="52" aria-hidden="true">
-                </picture>
-                <h2 class="cs-title">
-                    Exterior Repairs
-                </h2>
-                <p class="cs-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-            </li>
-            <li class="cs-item">
-                <picture class="cs-icon">
-                    <img loading="lazy" decoding="async" src="/assets/svgs/s3.svg" alt="icon" width="52" height="52" aria-hidden="true">
-                </picture>
-                <h2 class="cs-title">
-                    Utility Maintenance
-                </h2>
-                <p class="cs-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-            </li>
-            <li class="cs-item">
-                <picture class="cs-icon">
-                    <img loading="lazy" decoding="async" src="/assets/svgs/s4.svg" alt="icon" width="52" height="52" aria-hidden="true">
-                </picture>
-                <h2 class="cs-title">
-                    Design Consultation
-                </h2>
-                <p class="cs-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-            </li>
-        </ul>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                 Side By Side                 -->
-    <!-- ============================================ -->
-
-    <section id="RPsbs-313">
-        <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-image-group">
-                <picture class="cs-picture cs-picture1">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 482, height: 536 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 482, height: 536 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 482, height: 536 }) | jpeg %}" type="image/jpeg">
-                    <!--Tablet Image-->
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 802, height: 892 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 802, height: 892 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 802, height: 892 }) | jpeg %}" type="image/jpeg">
-                    <!--Desktop Image-->
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | avif %}" type="image/avif">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | webp %}" type="image/webp">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | jpeg %}" type="image/jpeg">
-                    <img src="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | jpeg %}" alt="lawyers" width="522" height="581" loading="lazy" decoding="async">
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 366, height: 354 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 366, height: 354 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 366, height: 354 }) | jpeg %}" type="image/jpeg">
-                    <!--Tablet Image-->
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 600, height: 578 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 600, height: 578 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 600, height: 578 }) | jpeg %}" type="image/jpeg">
-                    <!--Desktop Image-->
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | avif %}" type="image/avif">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | webp %}" type="image/webp">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | jpeg %}" type="image/jpeg">
-                    <img src="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | jpeg %}" alt="gavel" width="390" height="376" loading="lazy" decoding="async">
-                </picture>
-            </div>
-            <!-- Right Content Section-->
-            <div class="cs-content">
-                <span class="cs-topper">About Us</span>
-                <h2 class="cs-title">
-                    About Stitch Law
-                </h2>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <div class="cs-quote">
-                    <span class="cs-quote-text">
-                        In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet imperdiet for mind.
-                    </span>
-                    <span class="cs-name">Justin Time</span>
-                    <span class="cs-job">CEO-Founder</span>
-                    <img class="cs-quote-icon" loading="lazy" decoding="async" src="/assets/svgs/quote.svg" alt="gavel" width="136" height="77">
-                </div>
-                <a href="/about/" class="cs-button-solid">About Us</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!--             Side By Side Reverse             -->
-    <!-- ============================================ -->
-
-    <section id="RPsbsr-313">
-        <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-image-group">
-                <picture class="cs-picture cs-picture1">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 482, height: 536 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 482, height: 536 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 482, height: 536 }) | jpeg %}" type="image/jpeg">
-                    <!--Tablet Image-->
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 802, height: 892 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 802, height: 892 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 802, height: 892 }) | jpeg %}" type="image/jpeg">
-                    <!--Desktop Image-->
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | avif %}" type="image/avif">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | webp %}" type="image/webp">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | jpeg %}" type="image/jpeg">
-                    <img src="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | jpeg %}" alt="lawyers" width="522" height="581" loading="lazy" decoding="async">
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 366, height: 354 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 366, height: 354 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 366, height: 354 }) | jpeg %}" type="image/jpeg">
-                    <!--Tablet Image-->
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 600, height: 578 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 600, height: 578 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 600, height: 578 }) | jpeg %}" type="image/jpeg">
-                    <!--Desktop Image-->
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | avif %}" type="image/avif">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | webp %}" type="image/webp">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | jpeg %}" type="image/jpeg">
-                    <img src="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | jpeg %}" alt="gavel" width="390" height="376" loading="lazy" decoding="async">
-                </picture>
-            </div>
-            <!-- Right Content Section-->
-            <div class="cs-content">
-                <span class="cs-topper">About Us</span>
-                <h2 class="cs-title">
-                    About Stitch Law
-                </h2>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <a href="/about/" class="cs-button-solid">About Us</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                   Gallery                    -->
-    <!-- ============================================ -->
-
-    <section id="gallery-48">
-        <div class="cs-container">
-            <div class="cs-content">
-                <span class="cs-topper">Our Portfolio</span>
-                <h2 class="cs-title">
-                    Et orci volutpat, back up generator installations
-                </h2>
-            </div>
-            <div class="cs-image-group">
-                <div class="cs-row cs-row-1">
-                    <!-- Row 1-->
-                    <picture class="cs-picture cs-picture-1">
-                        <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port1.jpg" | resize({ width: 182, height: 250 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port1.jpg" | resize({ width: 182, height: 250 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port1.jpg" | resize({ width: 182, height: 250 }) | jpeg %}" type="image/jpeg">
-                        <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port1.jpg" | resize({ width: 634, height: 798 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port1.jpg" | resize({ width: 634, height: 798 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port1.jpg" | resize({ width: 634, height: 798 }) | jpeg %}" type="image/jpeg">
-                        <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port1.jpg" | resize({ width: 826, height: 1134 }) | avif %}" type="image/avif">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port1.jpg" | resize({ width: 826, height: 1134 }) | webp %}" type="image/webp">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port1.jpg" | resize({ width: 826, height: 1134 }) | jpeg %}" type="image/jpeg">
-                        <img src="{% getUrl "/assets/images/portfolio/port1.jpg" | resize({ width: 826, height: 1134 }) | jpeg %}" alt="new hallway" width="413" height="567" loading="lazy" decoding="async">
-                    </picture>
-                    <picture class="cs-picture cs-picture-2">
-                        <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port4.jpg" | resize({ width: 182, height: 276 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port4.jpg" | resize({ width: 182, height: 276 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port4.jpg" | resize({ width: 182, height: 276 }) | jpeg %}" type="image/jpeg">
-                        <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port4.jpg" | resize({ width: 634, height: 886 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port4.jpg" | resize({ width: 634, height: 886 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port4.jpg" | resize({ width: 634, height: 886 }) | jpeg %}" type="image/jpeg">
-                        <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port4.jpg" | resize({ width: 826, height: 1258 }) | avif %}" type="image/avif">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port4.jpg" | resize({ width: 826, height: 1258 }) | webp %}" type="image/webp">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port4.jpg" | resize({ width: 826, height: 1258 }) | jpeg %}" type="image/jpeg">
-                        <img src="{% getUrl "/assets/images/portfolio/port4.jpg" | resize({ width: 826, height: 1258 }) | jpeg %}" alt="new home construction" width="413" height="629" loading="lazy" decoding="async">
-                    </picture>
-                    <picture class="cs-picture cs-picture-3">
-                        <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port7.jpg" | resize({ width: 182, height: 226 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port7.jpg" | resize({ width: 182, height: 226 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port7.jpg" | resize({ width: 182, height: 226 }) | jpeg %}" type="image/jpeg">
-                        <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port7.jpg" | resize({ width: 634, height: 720 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port7.jpg" | resize({ width: 634, height: 720 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port7.jpg" | resize({ width: 634, height: 720 }) | jpeg %}" type="image/jpeg">
-                        <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port7.jpg" | resize({ width: 826, height: 1024 }) | avif %}" type="image/avif">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port7.jpg" | resize({ width: 826, height: 1024 }) | webp %}" type="image/webp">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port7.jpg" | resize({ width: 826, height: 1024 }) | jpeg %}" type="image/jpeg">
-                        <img src="{% getUrl "/assets/images/portfolio/port7.jpg" | resize({ width: 826, height: 1024 }) | jpeg %}" alt="building a new wall" width="413" height="512" loading="lazy" decoding="async">
-                    </picture>
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                </div>
-                <!-- Row 2 -->
-                <div class="cs-row cs-row-2">
-                    <picture class="cs-picture cs-picture-1">
-                        <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port2.jpg" | resize({ width: 182, height: 216 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port2.jpg" | resize({ width: 182, height: 216 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port2.jpg" | resize({ width: 182, height: 216 }) | jpeg %}" type="image/jpeg">
-                        <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port2.jpg" | resize({ width: 634, height: 692 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port2.jpg" | resize({ width: 634, height: 692 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port2.jpg" | resize({ width: 634, height: 692 }) | jpeg %}" type="image/jpeg">
-                        <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port2.jpg" | resize({ width: 826, height: 984 }) | avif %}" type="image/avif">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port2.jpg" | resize({ width: 826, height: 984 }) | webp %}" type="image/webp">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port2.jpg" | resize({ width: 826, height: 984 }) | jpeg %}" type="image/jpeg">
-                        <img src="{% getUrl "/assets/images/portfolio/port2.jpg" | resize({ width: 826, height: 984 }) | jpeg %}" alt="new kitchen" width="413" height="492" loading="lazy" decoding="async">
-                    </picture>
-                    <picture class="cs-picture cs-picture-2">
-                        <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port5.jpg" | resize({ width: 182, height: 228 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port5.jpg" | resize({ width: 182, height: 228 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port5.jpg" | resize({ width: 182, height: 228 }) | jpeg %}" type="image/jpeg">
-                        <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port5.jpg" | resize({ width: 634, height: 728 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port5.jpg" | resize({ width: 634, height: 728 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port5.jpg" | resize({ width: 634, height: 728 }) | jpeg %}" type="image/jpeg">
-                        <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port5.jpg" | resize({ width: 826, height: 1034 }) | avif %}" type="image/avif">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port5.jpg" | resize({ width: 826, height: 1034 }) | webp %}" type="image/webp">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port5.jpg" | resize({ width: 826, height: 1034 }) | jpeg %}" type="image/jpeg">
-                        <img src="{% getUrl "/assets/images/portfolio/port5.jpg" | resize({ width: 826, height: 1034 }) | jpeg %}" alt="apartment addition" width="413" height="517" loading="lazy" decoding="async">
-                    </picture>
-
-                    <picture class="cs-picture cs-picture-3">
-                        <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port8.jpg" | resize({ width: 182, height: 276 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port8.jpg" | resize({ width: 182, height: 276 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port8.jpg" | resize({ width: 182, height: 276 }) | jpeg %}" type="image/jpeg">
-                        <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port8.jpg" | resize({ width: 634, height: 886 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port8.jpg" | resize({ width: 634, height: 886 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port8.jpg" | resize({ width: 634, height: 886 }) | jpeg %}" type="image/jpeg">
-                        <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port8.jpg" | resize({ width: 826, height: 1258 }) | avif %}" type="image/avif">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port8.jpg" | resize({ width: 826, height: 1258 }) | webp %}" type="image/webp">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port8.jpg" | resize({ width: 826, height: 1258 }) | jpeg %}" type="image/jpeg">
-                        <img src="{% getUrl "/assets/images/portfolio/port8.jpg" | resize({ width: 826, height: 1258 }) | jpeg %}" alt="kew kitchen cabinets" width="413" height="629" loading="lazy" decoding="async">
-                    </picture>
-
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                </div>
-                <!-- Row 3 -->
-                <div class="cs-row cs-row-3">
-                    <picture class="cs-picture cs-picture-1">
-                        <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port3.jpg" | resize({ width: 182, height: 276 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port3.jpg" | resize({ width: 182, height: 276 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port3.jpg" | resize({ width: 182, height: 276 }) | jpeg %}" type="image/jpeg">
-                        <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port3.jpg" | resize({ width: 634, height: 880 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port3.jpg" | resize({ width: 634, height: 880 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port3.jpg" | resize({ width: 634, height: 880 }) | jpeg %}" type="image/jpeg">
-                        <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port3.jpg" | resize({ width: 826, height: 1250 }) | avif %}" type="image/avif">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port3.jpg" | resize({ width: 826, height: 1250 }) | webp %}" type="image/webp">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port3.jpg" | resize({ width: 826, height: 1250 }) | jpeg %}" type="image/jpeg">
-                        <img src="{% getUrl "/assets/images/portfolio/port3.jpg" | resize({ width: 826, height: 1250 }) | jpeg %}" alt="new black window structure" width="413" height="625" loading="lazy" decoding="async">
-                    </picture>
-                    <picture class="cs-picture cs-picture-2">
-                        <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port6.jpg" | resize({ width: 182, height: 198 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port6.jpg" | resize({ width: 182, height: 198 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port6.jpg" | resize({ width: 182, height: 198 }) | jpeg %}" type="image/jpeg">
-                        <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port6.jpg" | resize({ width: 634, height: 636 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port6.jpg" | resize({ width: 634, height: 636 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port6.jpg" | resize({ width: 634, height: 636 }) | jpeg %}" type="image/jpeg">
-                        <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port6.jpg" | resize({ width: 826, height: 904 }) | avif %}" type="image/avif">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port6.jpg" | resize({ width: 826, height: 904 }) | webp %}" type="image/webp">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port6.jpg" | resize({ width: 826, height: 904 }) | jpeg %}" type="image/jpeg">
-                        <img src="{% getUrl "/assets/images/portfolio/port6.jpg" | resize({ width: 826, height: 904 }) | jpeg %}" alt="kitchen rebovation" width="413" height="452" loading="lazy" decoding="async">
-                    </picture>
-
-                    <picture class="cs-picture cs-picture-3">
-                        <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port9.jpg" | resize({ width: 182, height: 276 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port9.jpg" | resize({ width: 182, height: 276 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port9.jpg" | resize({ width: 182, height: 276 }) | jpeg %}" type="image/jpeg">
-                        <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port9.jpg" | resize({ width: 634, height: 886 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port9.jpg" | resize({ width: 634, height: 886 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port9.jpg" | resize({ width: 634, height: 886 }) | jpeg %}" type="image/jpeg">
-                        <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port9.jpg" | resize({ width: 826, height: 1258 }) | avif %}" type="image/avif">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port9.jpg" | resize({ width: 826, height: 1258 }) | webp %}" type="image/webp">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port9.jpg" | resize({ width: 826, height: 1258 }) | jpeg %}" type="image/jpeg">
-                        <img src="{% getUrl "/assets/images/portfolio/port9.jpg" | resize({ width: 826, height: 1258 }) | jpeg %}" alt="bathroom renovation" width="413" height="629" loading="lazy" decoding="async">
-                    </picture>
-
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                </div>
-            </div>
-            <a href="/project-one/" class="cs-button-solid">View a Project</a>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                   Reviews                    -->
-    <!-- ============================================ -->
-
-    <section id="reviews-67">
-        <div class="cs-container">
-            <div class="cs-content">
-                <span class="cs-topper">Our Reviews</span>
-                <h2 class="cs-title">
-                    Words From Our Customers
-                </h2>
-                <p class="cs-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dolor volutpat porttitor sagittis nunc nisl. Sagittis sit pellentesque gravida viverra. Leo ut sed euismod tortor risus et. Ornare non neque, leo, ornare. Lorem ipsum dolor sit amet.
-                </p>
-            </div>
-            <ul class="cs-card-group">
-                <!-- Review 1 -->
-                <li class="cs-item">
-                    <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="profile picture" width="80" height="80">
-                    <p class="cs-item-text">
-                        Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa urna, volutpat orci imperdiet eget eget. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, debitis!
-                    </p>
-                    <div class="cs-info">
-                        <div class="cs-flex-group">
-                            <span class="cs-name">Jon Doe</span>
-                            <span class="cs-desc">Homeowner</span>
-                        </div>
-                        <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="96" height="16">
+<section id="hero-288">
+                <div class="cs-container">
+                    <div class="cs-content">
+                        <span class="cs-topper">Enjoy a Secure, Bright Future</span>
+                        <h1 class="cs-title">Call Bespoke Estate Law</h1>
+                        <p class="cs-text" style="min-height:105px">We provide personalized estate planning, business law services, and trust administration to give you peace of mind and a secure future. Trust a law firm that has helped hundreds of clients enjoy a bright future - Call for your consultation today.</p>
+                        <a class="cs-button-solid" href="/contact">Make An Appointment</a>
+                        <ul class="cs-stats-group">
+                            <li class="cs-item">
+                                <span class="cs-number">7+</span>
+                                <span class="cs-desc">Years Experience</span>
+                            </li>
+                            <li class="cs-item">
+                                <span class="cs-number">850+</span>
+                                <span class="cs-desc">Happy Clients</span>
+                            </li>
+                            <li class="cs-item">
+                                <span class="cs-number">100%</span>
+                                <span class="cs-desc">Satisfaction</span>
+                            </li>
+                        </ul>
                     </div>
-                </li>
-                <!-- Review 2 -->
-                <li class="cs-item">
-                    <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="profile picture" width="80" height="80">
-                    <p class="cs-item-text">
-                        Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa urna, volutpat orci imperdiet eget eget.
-                    </p>
-                    <div class="cs-info">
-                        <div class="cs-flex-group">
-                            <span class="cs-name">Jon Doe</span>
-                            <span class="cs-desc">Homeowner</span>
-                        </div>
-                        <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="96" height="16">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="/assets/images/landing-m.webp">
+                        <source media="(min-width: 601px)" srcset="/assets/images/landing.jpg">
+                        <img alt="matthew hurst" decoding="async" height="814" src="/assets/images/landing.jpg" width="630" aria-hidden="true">
+                    </picture>
+                    <div class="cs-waves"></div>
+                </div>
+            </section>
+            <section id="services-296">
+                <div class="cs-container">
+                    <div class="cs-content">
+                        <span class="cs-topper cs-centered">Our Services</span>
+                        <h2 class="cs-title">Bespoke Estate Law: Tailored Legal Solutions for Your Unique Needs</h2>
+                        <p class="cs-text">Whether you require assistance with creating a comprehensive estate plan, establishing a new business, drafting or reviewing contracts, or navigating the complexities of probate and trust administration, Bespoke Estate Law is here to provide the expert guidance and support you need.</p>
                     </div>
-                </li>
-            </ul>
-            <a href="/reviews/" class="cs-button-solid">Read All Reviews</a>
-        </div>
-    </section>
+                    <ul class="cs-card-group">
+                        <li class="cs-item">
+                            <a class="cs-link" href="/myrtle-beach">
+                                <img alt="icon" decoding="async" height="48" src="/assets/svgs/s1.svg" width="48" aria-hidden="true" class="cs-icon" loading="lazy">
+                                <h3 class="cs-h3">Estate Planning</h3>
+                                <p class="cs-item-text">Protect your assets and secure your legacy with our personalized estate planning services tailored to your unique needs.</p>
+                            </a>
+                            <picture class="cs-image" aria-hidden="true">
+                                <source media="(max-width: 768px)" srcset="/assets/images/service-bg-m.webp">
+                                <source media="(min-width: 769px)" srcset="/assets/images/service-bg.jpg">
+                                <img alt="library" decoding="async" height="266" src="/assets/images/service-bg.jpg" width="413" loading="lazy">
+                            </picture>
+                        </li>
+                        <li class="cs-item">
+                            <a class="cs-link" href="/myrtle-beach/business">
+                                <img alt="icon" decoding="async" height="48" src="/assets/svgs/s2.svg" width="48" aria-hidden="true" class="cs-icon" loading="lazy">
+                                <h3 class="cs-h3">Business Law</h3>
+                                <p class="cs-item-text">From formation to growth, our comprehensive business law services provide the legal foundation for your company's success.</p>
+                            </a>
+                            <picture class="cs-image" aria-hidden="true">
+                                <source media="(max-width: 768px)" srcset="/assets/images/service-bg-m.webp">
+                                <source media="(min-width: 769px)" srcset="/assets/images/service-bg.jpg">
+                                <img alt="library" decoding="async" height="266" src="/assets/images/service-bg.jpg" width="413" loading="lazy">
+                            </picture>
+                        </li>
+                        <li class="cs-item">
+                            <a class="cs-link" href="/myrtle-beach/business">
+                                <img alt="icon" decoding="async" height="48" src="/assets/svgs/s3.svg" width="48" aria-hidden="true" class="cs-icon" loading="lazy">
+                                <h3 class="cs-h3">Contract Law</h3>
+                                <p class="cs-item-text">Ensure your agreements are legally sound and protect your interests with our contract law expertise.</p>
+                            </a>
+                            <picture class="cs-image" aria-hidden="true">
+                                <source media="(max-width: 768px)" srcset="/assets/images/service-bg-m.webp">
+                                <source media="(min-width: 769px)" srcset="/assets/images/service-bg.jpg">
+                                <img alt="library" decoding="async" height="266" src="/assets/images/service-bg.jpg" width="413" loading="lazy">
+                            </picture>
+                        </li>
+                        <li class="cs-item">
+                            <a class="cs-link" href="/myrtle-beach/trusts">
+                                <img alt="icon" decoding="async" height="48" src="/assets/svgs/s4.svg" width="48" aria-hidden="true" class="cs-icon" loading="lazy">
+                                <h3 class="cs-h3">Probate & Trust Administration</h3>
+                                <p class="cs-item-text">Navigate the complexities of probate and trust administration with our guidance and unwavering support.</p>
+                            </a>
+                            <picture class="cs-image">
+                                <source media="(max-width: 768px)" srcset="/assets/images/service-bg-m.webp">
+                                <source media="(min-width: 769px)" srcset="/assets/images/service-bg.jpg">
+                                <img alt="library" decoding="async" height="266" src="/assets/images/service-bg.jpg" width="413" aria-hidden="true" loading="lazy">
+                            </picture>
+                        </li>
+                    </ul>
+                    <a class="cs-button-solid" href="/contact">Book Free Consulation</a>
+                </div>
+            </section>
+            <section id="quote-560">
+                <div class="cs-container">
+                    <div class="cs-content">
+                        <span class="cs-topper">Bespoke (adjective):</span>
+                        <p class="cs-quote">Specially made for a particular person or purpose. Solutions that are tailored to the unique needs and circumstances of a particular client, rather than a one-size-fits-all approach.</p>
+                        <span class="cs-name">Why Bespoke Estate Law</span>
+                    </div>
+                </div>
+            </section>
+            <section id="sbs-311">
+                <div class="cs-container">
+                    <div class="cs-image-group">
+                        <picture class="cs-picture cs-picture1">
+                            <source media="(max-width: 600px)" srcset="/assets/images/about1-m.webp">
+                            <source media="(min-width: 601px)" srcset="/assets/images/about1.jpg">
+                            <img alt="lawyers" decoding="async" height="581" src="/assets/images/about1.jpg" width="522" aria-hidden="true" loading="lazy">
+                        </picture>
+                        <picture class="cs-picture cs-picture2">
+                            <source media="(max-width: 600px)" srcset="/assets/images/about2-m.webp">
+                            <source media="(min-width: 601px)" srcset="/assets/images/about2.jpg">
+                            <img alt="gavel" decoding="async" height="400" src="/assets/images/about2.jpg" width="414" aria-hidden="true" loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="cs-content">
+                        <span class="cs-topper">Bespoke Estate Law</span>
+                        <h2 class="cs-title">Experienced Estate & Trust Attorneys</h2>
+                        <p class="cs-text">Bespoke Estate Law is a leading law firm that specializes in providing comprehensive estate planning, business law, contract law, and probate & trust administration services to clients in the Myrtle Beach area. With a focus on protecting client assets and creating custom estate plans, we utilize cutting-edge design and advanced planning techniques to ensure efficient estate administration while considering evolving laws and future trends. Our approach to understanding each client's family dynamic allows us to structure estates in the most sensible manner for every circumstance, minimize taxes, reduce estate administration costs, and streamline the distribution process.</p>
+                        <div class="cs-quote">
+                            <span class="cs-quote-text">Since I was a child, I've believed that you are your own best competition; as a result, I am always striving to outdo myself and deliver the absolute best for my clients. </span>
+                            <span class="cs-name">Matthew Hurst</span>
+                            <span class="cs-job">Owner/Lead Attorney</span>
+                            <img alt="quote" decoding="async" height="77" src="/assets/svgs/quote-white.svg" width="136" loading="lazy" class="cs-quote-icon">
+                        </div>
+                        <a class="cs-button-solid" href="/contact">Book Free Consultation</a>
+                    </div>
+                </div>
+            </section>
+            <section id="steps-1712">
+                <picture class="cs-background">
+                    <source media="(max-width: 768px)" srcset="/assets/images/why1.jpg">
+                    <source media="(min-width: 769px)" srcset="/assets/images/why1.jpg">
+                    <img alt="business meeting" decoding="async" height="609" src="/assets/images/why1.jpg" width="522" aria-hidden="true" loading="lazy">
+                </picture>
+                <div class="cs-container">
+                    <div class="cs-wrapper">
+                        <div class="cs-content">
+                            <span class="cs-topper">Getting Started</span>
+                            <h2 class="cs-title">Our Streamlined Estate Planning and Trust Administration Process</h2>
+                        </div>
+                        <ul class="cs-card-group">
+                            <li class="cs-item">
+                                <span class="cs-number">01</span>
+                                <div class="cs-flex">
+                                    <h3 class="cs-h3">Comprehensive Consultation</h3>
+                                    <p class="cs-item-text">Begin your estate planning journey with a free, in-depth consultation. We will guide you through the process, discussing your family dynamics, assets, and long-term goals to develop a tailored plan that meets your unique needs.</p>
+                                </div>
+                            </li>
+                            <li class="cs-item">
+                                <span class="cs-number">02</span>
+                                <div class="cs-flex">
+                                    <h3 class="cs-h3">Customized Estate Plan</h3>
+                                    <p class="cs-item-text">Based on your consultation, we will craft a personalized estate plan, which may include wills, trust administration and creation, powers of attorney, and healthcare directives. We'll explain each component of your plan and how it contributes to protecting your assets and ensuring your wishes are carried out.</p>
+                                </div>
+                            </li>
+                            <li class="cs-item">
+                                <span class="cs-number">03</span>
+                                <div class="cs-flex">
+                                    <h3 class="cs-h3">Plan Implementation</h3>
+                                    <p class="cs-item-text">Once your estate plan is finalized, we will oversee the proper execution and notarization of all legal documents. We'll also assist with the funding of trusts and the transfer of assets, ensuring your plan is fully implemented and effective.</p>
+                                </div>
+                            </li>
+                            <li class="cs-item">
+                                <span class="cs-number">04</span>
+                                <div class="cs-flex">
+                                    <h3 class="cs-h3">Ongoing Maintenance and Trust Administration</h3>
+                                    <p class="cs-item-text">As your life circumstances change, our firm will be there to update and maintain your estate plan. We also provide expert trust administration services, including managing trust assets, distributing funds to beneficiaries, and handling tax and legal requirements, giving you peace of mind knowing your legacy is secure.</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <a class="cs-button-solid" href="/contact">Book Free Consultation</a>
+                    </div>
+                </div>
+            </section>
+            <section id="sbs-1640">
+                <div class="cs-container">
+                    <div class="cs-content">
+                        <span class="cs-topper">Business Law</span>
+                        <h2 class="cs-title">Creating LLCs and Corporations, Operating Agreements, Lease and Contract Drafting, And More</h2>
+                        <picture class="cs-picture">
+                            <source media="(max-width: 600px)" srcset="/assets/images/contract-m.webp">
+                            <source media="(min-width: 601px)" srcset="/assets/images/contract.jpg">
+                            <img alt="two people signing a contract" decoding="async" height="638" src="/assets/images/contract.jpg" width="630" loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="cs-stats-group">
+                        <p class="cs-text">We provide comprehensive business formation services, guiding you through the process of creating a solid legal foundation for your company. Whether you're establishing a limited liability company (LLC), corporation, or another business entity, we'll help you choose the most appropriate structure based on your unique needs and goals.</p>
+                        <p class="cs-text">Our team will draft and file all necessary documents, including articles of incorporation or organization, beneficial ownership information (BOI) reports, and create custom operating agreements or bylaws that outline the management structure, ownership rights, and responsibilities of your business. We'll also provide ongoing support as your business grows, offering advice on compliance issues, contract drafting, and other legal matters, ensuring your company is well-positioned for success.</p>
+                        <ul class="cs-stats">
+                            <li class="cs-stat">
+                                <span class="cs-number">100%</span>
+                                <span class="cs-desc">Accurate Filings</span>
+                            </li>
+                            <li class="cs-stat">
+                                <span class="cs-number">500+</span>
+                                <span class="cs-desc">Businesses Served</span>
+                            </li>
+                            <li class="cs-stat">
+                                <span class="cs-number">5/5</span>
+                                <span class="cs-desc">Client Rating</span>
+                            </li>
+                        </ul>
+                        <a class="cs-button-solid cs-yellow" href="/contact">Book Free Consultation</a>
+                    </div>
+                </div>
+            </section>
+            <section id="services-689">
+                <div class="cs-container">
+                    <div class="cs-content">
+                        <div class="cs-flex-group">
+                            <span class="cs-topper">Our Services</span>
+                            <h2 class="cs-title">Comprehensive Services for Every Stage of Life and Business</h2>
+                        </div>
+                        <p class="cs-text">At Bespoke Estate Law, we offer a wide array of services within our four main practice areas to cater to your unique needs at every stage of life and business. Our experienced attorney provides personalized guidance and support, ensuring that your legal matters are handled with the utmost care and professionalism. From creating a robust estate plan to protect your assets and loved ones, to establishing and growing your business, we're here to help you navigate the complexities of the legal landscape.</p>
+                    </div>
+                    <ul class="cs-card-group">
+                        <li class="cs-item">
+                            <a class="cs-link" href="/myrtle-beach/trusts">
+                                <picture class="cs-picture">
+                                    <img alt="icon" decoding="async" height="32" src="/assets/images/deco.svg" width="32" aria-hidden="true" class="cs-icon" loading="lazy">
+                                </picture>
+                                <h3 class="cs-h3">Revocable Living Trusts</h3>
+                                <p class="cs-item-text">Protect your assets, avoid probate, and maintain control over your property during your lifetime with a revocable living trust tailored to your specific needs and goals.</p>
+                            </a>
+                        </li>
+                        <li class="cs-item">
+                            <a class="cs-link" href="/myrtle-beach/trusts">
+                                <picture class="cs-picture">
+                                    <img alt="icon" decoding="async" height="32" src="/assets/images/deco.svg" width="32" aria-hidden="true" class="cs-icon" loading="lazy">
+                                </picture>
+                                <h3 class="cs-h3">Irrevocable Trusts</h3>
+                                <p class="cs-item-text">Safeguard your wealth, minimize estate taxes, and protect your assets from creditors and lawsuits with an irrevocable trust designed to meet your unique circumstances.</p>
+                            </a>
+                        </li>
+                        <li class="cs-item">
+                            <a class="cs-link" href="/myrtle-beach/trusts">
+                                <picture class="cs-picture">
+                                    <img alt="icon" decoding="async" height="32" src="/assets/images/deco.svg" width="32" aria-hidden="true" class="cs-icon" loading="lazy">
+                                </picture>
+                                <h3 class="cs-h3">Special Needs Trusts</h3>
+                                <p class="cs-item-text">Ensure your loved one with special needs is provided for without jeopardizing their eligibility for government benefits through a carefully crafted special needs trust.</p>
+                            </a>
+                        </li>
+                        <li class="cs-item">
+                            <a class="cs-link" href="/myrtle-beach/business">
+                                <picture class="cs-picture">
+                                    <img alt="icon" decoding="async" height="32" src="/assets/images/deco.svg" width="32" aria-hidden="true" class="cs-icon" loading="lazy">
+                                </picture>
+                                <h3 class="cs-h3">LLC/Corporation Formation</h3>
+                                <p class="cs-item-text">Establish a limited liability company (LLC) to protect your personal assets and benefit from flexible management and taxation options, while minimizing your legal risks.</p>
+                            </a>
+                        </li>
+                        <li class="cs-item">
+                            <a class="cs-link" href="/myrtle-beach/business">
+                                <picture class="cs-picture">
+                                    <img alt="icon" decoding="async" height="32" src="/assets/images/deco.svg" width="32" aria-hidden="true" class="cs-icon" loading="lazy">
+                                </picture>
+                                <h3 class="cs-h3">Lease Drafting</h3>
+                                <p class="cs-item-text">Safeguard your property and ensure a clear lease arrangement with our expert residential and commercial lease drafting services, providing you with the protection and peace of mind you deserve.</p>
+                            </a>
+                        </li>
+                        <li class="cs-item">
+                            <a class="cs-link" href="/myrtle-beach/business">
+                                <picture class="cs-picture">
+                                    <img alt="icon" decoding="async" height="32" src="/assets/images/deco.svg" width="32" aria-hidden="true" class="cs-icon" loading="lazy">
+                                </picture>
+                                <h3 class="cs-h3">Contract Drafting and Review</h3>
+                                <p class="cs-item-text">Ensure your agreements are legally sound, protect your interests, and minimize potential disputes with our contract drafting and review services tailored to your specific needs.</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <a class="cs-button-solid" href="/contact">Book Free Consultation</a>
+                </div>
+            </section>
+            <section id="why-choose-1635">
+                <div class="cs-container">
+                    <div class="cs-content">
+                        <div class="cs-flex">
+                            <span class="cs-topper">Experienced</span>
+                            <h2 class="cs-title">Why Choose Bespoke Estate Law</h2>
+                        </div>
+                        <p class="cs-text">Choosing Bespoke Estate Law for your legal needs means partnering with a firm that is dedicated to providing exceptional service, personalized solutions, and unparalleled expertise. Here are three compelling reasons why clients trust us with their most important legal matters:</p>
+                    </div>
+                    <div class="cs-wrapper">
+                        <ul class="cs-card-group">
+                            <li class="cs-item">
+                                <picture class="cs-icon-wrapper">
+                                    <img alt="icon" decoding="async" height="32" src="/assets/svgs/chat.svg" width="32" aria-hidden="true" class="cs-icon" loading="lazy">
+                                </picture>
+                                <div class="cs-text-group">
+                                    <h3 class="cs-h3">Tailored Approach</h3>
+                                    <p class="cs-item-text">We listen to your unique needs and craft customized legal strategies that align with your goals.</p>
+                                </div>
+                            </li>
+                            <li class="cs-item">
+                                <picture class="cs-icon-wrapper">
+                                    <img alt="icon" decoding="async" height="32" src="/assets/svgs/call.svg" width="32" aria-hidden="true" class="cs-icon" loading="lazy">
+                                </picture>
+                                <div class="cs-text-group">
+                                    <h3 class="cs-h3">Experienced Attorney</h3>
+                                    <p class="cs-item-text">Our attorney's multi-state experience allows us to provide comprehensive, future-proofed solutions for our clients.</p>
+                                </div>
+                            </li>
+                            <li class="cs-item">
+                                <picture class="cs-icon-wrapper">
+                                    <img alt="icon" decoding="async" height="32" src="/assets/svgs/money.svg" width="32" aria-hidden="true" class="cs-icon" loading="lazy">
+                                </picture>
+                                <div class="cs-text-group">
+                                    <h3 class="cs-h3">Client-Centered Service</h3>
+                                    <p class="cs-item-text">We prioritize responsive, attentive service, and we guide you through the legal process with clarity and compassion.</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="cs-image-group">
+                            <div class="cs-picture-wrapper">
+                                <picture class="cs-picture cs-picture1">
+                                    <source media="(max-width: 600px)" srcset="/assets/images/matt3-m.webp">
+                                    <source media="(min-width: 601px)" srcset="/assets/images/matt3.jpg">
+                                    <img alt="matthew hurst" decoding="async" height="414" src="/assets/images/matt3.jpg" width="434" loading="lazy">
+                                </picture>
+                                <div class="cs-box">
+                                    <span class="cs-header">Matthew Hurst</span>
+                                    <span class="cs-desc">Estate Attorney</span>
+                                </div>
+                            </div>
+                            <picture class="cs-picture cs-picture2">
+                                <source media="(min-width: 600px)" srcset="/assets/images/why3-m.webp">
+                                <source media="(max-width: 601px)" srcset="/assets/images/why3.jpg">
+                                <img alt="on computer" decoding="async" height="197" src="/assets/images/why3.jpg" width="197" loading="lazy">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="reviews-727">
+                <div class="cs-container">
+                    <div class="cs-content">
+                        <span class="cs-topper cs-centered">Testimonials</span>
+                        <h2 class="cs-title">What Our Clients Have To Say</h2>
+                        <p class="cs-text">Our clients appreciate our ability to simplify complex legal concepts, provide prompt updates on their cases, and offer unwavering support throughout the process. Whether we're crafting a comprehensive estate plan, guiding a client through business formation, or administering a trust with diligence and care, our goal is always to achieve the best possible outcome for our clients. Their satisfaction and peace of mind are our ultimate measures of success.</p>
+                    </div>
+                    <ul class="cs-card-group">
+                        <li class="cs-item">
+                            <img alt="quote icon" decoding="async" height="38" src="/assets/svgs/quote-blue.svg" width="40" aria-hidden="true" class="cs-icon" loading="lazy">
+                            <p class="cs-item-text">We needed an Estate Planning attorney and found Matthew. We explained what we needed and he laid it all out for us. Matthew made our process stress free and we know our assets are protected and our family will be protected as well. Matthew is extremely knowledgeable and professional. I would definitely recommend Bespoke Estate Law if you are in need of estate planning services.</p>
+                            <span class="cs-name">Pilar D.</span>
+                        </li>
+                        <li class="cs-item">
+                            <img alt="quote icon" decoding="async" height="38" src="/assets/svgs/quote-blue.svg" width="40" aria-hidden="true" class="cs-icon" loading="lazy">
+                            <p class="cs-item-text">We would highly recommend Bespoke Law for all of your estate planning. We relocated to a new state and Matt made the entire process seamless and efficient. He provided sound advice on how to best protect ourselves and our heirs from unnecessary costs. Call Matt today!</p>
+                            <span class="cs-name">Dorie M.</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section id="cta-1692">
+                <div class="cs-container">
+                    <div class="cs-content">
+                        <span class="cs-topper cs-centered">Call Now</span>
+                        <h2 class="cs-title">Call Someone You Can Trust, Call Bespoke Estate Law</h2>
+                        <p class="cs-text">Contact Bespoke Estate Law today for a free consultation. Our experienced attorney will provide personalized guidance to help you achieve your legal goals.</p>
+                        <a class="cs-button-solid cs-yellow cs-submit" href="/contact">Book Free Consultation</a>
+                    </div>
+                </div>
+                <picture class="cs-background">
+                    <source media="(max-width: 600px)" srcset="/assets/images/cta-m.webp">
+                    <source media="(min-width: 601px)" srcset="/assets/images/cta.jpg">
+                    <img alt="justice scales and gavel" decoding="async" height="609" src="/assets/images/cta.jpg" width="522" aria-hidden="true" loading="lazy">
+                </picture>
+            </section>
 
-    {% include 'sections/cta.html' %}
+
 {% endblock %}

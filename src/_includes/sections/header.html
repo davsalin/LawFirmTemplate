@@ -3,73 +3,203 @@
 <!-- ============================================ -->
 
 <header id="cs-navigation">
-    <div class="cs-container">
-        <!--Nav Logo-->
-        <a href="/" class="cs-logo" aria-label="Company Name Home page">
-            <img src="/assets/svgs/logo-black.svg" alt="" width="210" height="29" aria-hidden="true" decoding="async">
-        </a>
-        <!--Navigation List-->
-        <nav class="cs-nav" aria-label="main navigation">
-            <!--Mobile Nav Toggle-->
-            <button class="cs-toggle" id="cs-toggle" aria-expanded="false" aria-controls="cs-ul-wrapper" aria-label="mobile menu toggle" aria-haspopup="menu">
-                <span class="cs-box" aria-hidden="true">
-                    <span class="cs-line cs-line1" aria-hidden="true"></span>
-                    <span class="cs-line cs-line2" aria-hidden="true"></span>
-                    <span class="cs-line cs-line3" aria-hidden="true"></span>
-                </span>
-            </button>
-            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
-            <div class="cs-ul-wrapper" id="cs-ul-wrapper">
-                <ul id="cs-expanded" class="cs-ul">
-                    <li class="cs-li">
-                        <a href="/" class="cs-li-link {% if page.url == "/" %} cs-active {% endif %}" {% if page.url == "/" %} aria-current="page" {% endif %}>
-                            Home
+            <div class="cs-top-bar">
+                <div class="cs-top-container">
+                    <div class="cs-top-contact">
+                        <a class="cs-top-link" href="tel:843-999-0799">
+                            <!--<img alt="logo" decoding="async" height="16" src="" width="16" aria-hidden="true" class="cs-link-icon">-->Call us: (843) 999-0799 
                         </a>
-                    </li>
-                    <li class="cs-li">
-                        <a href="/about/" class="cs-li-link {% if page.url == "/about/" %} cs-active {% endif %}" {% if page.url == "/about/" %} aria-current="page" {% endif %}>
-                            About
+                        <a class="cs-top-link" href="/contact">
+                            <!--<img alt="logo" decoding="async" height="20" src="" width="20" aria-hidden="true" class="cs-link-icon">-->Opening hours: Mon - Thu: 9am-5pm, Fri 9am-3pm
                         </a>
-                    </li>
-                    <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
-                    <!-- Note: When copying this dropdown, update the id attribute with an appropriate name (e.g., "services-dropdown-toggle", "products-dropdown-toggle") and ensure the aria-labelledby attribute on the ul matches the button's id -->
-                    <li class="cs-li cs-dropdown">
-                        <button class="cs-li-link cs-dropdown-toggle {% if page.url == "/project-one/" or page.url == "/project-two/" %} cs-active {% endif %}" aria-haspopup="menu" aria-expanded="false" id="projects-dropdown-toggle">
-                            Projects
-                            <img class="cs-drop-icon" src="/assets/svgs/dropdown.svg" alt="" width="15" height="15" decoding="async" aria-hidden="true">
-                        </button>
-                        <ul class="cs-drop-ul" aria-labelledby="projects-dropdown-toggle">
-                            <li class="cs-drop-li">
-                                <a href="/project-one/" class="cs-li-link cs-drop-link">Project One</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cs-container">
+                <a class="cs-logo" href="/" aria-label="back to home">
+                    <!--<img alt="logo" decoding="async" height="43" src="" width="197" aria-hidden="true">-->
+                </a>
+                <a class="cs-button-solid mobile-button" href="tel:843-999-0799">Call Now</a>
+                <nav class="cs-nav" role="navigation">
+                    <button aria-label="mobile menu toggle" class="cs-toggle">
+                        <div class="cs-box" aria-hidden="true">
+                            <span class="cs-line cs-line1" aria-hidden="true"></span>
+                            <span class="cs-line cs-line2" aria-hidden="true"></span>
+                            <span class="cs-line cs-line3" aria-hidden="true"></span>
+                        </div>
+                    </button>
+                    <div class="cs-ul-wrapper">
+                        <ul class="cs-ul" aria-expanded="false" id="cs-expanded">
+                            <li class="cs-li">
+                                <a class="cs-li-link cs-active" href="/">Home</a>
                             </li>
-                            <li class="cs-drop-li">
-                                <a href="/project-two/" class="cs-li-link cs-drop-link">Project Two</a>
+                            <li class="cs-li">
+                                <a class="cs-li-link" href="/about">About</a>
+                            </li>
+                            <li class="cs-li cs-dropdown" tabindex="0">
+                                <span class="cs-li-link">
+                                    Areas Served <!--<img alt="dropdown icon" decoding="async" height="15" src="" width="15" aria-hidden="true" class="cs-drop-icon">-->
+                                </span>
+                                <ul class="cs-drop-ul">
+                                    <li class="cs-drop-li">
+                                        <span class="cs-li-link cs-drop-link cs-drop3-main">
+                                            Myrtle Beach <!--<img alt="dropdown icon" decoding="async" height="15" src="" width="15" aria-hidden="true" class="cs-drop-icon">-->
+                                        </span>
+                                        <ul class="cs-drop3">
+                                            <li class="cs-drop-li3">
+                                                <a class="cs-li-link cs-drop-link cs-drop-link3" href="/myrtle-beach">Estate Planning</a>
+                                            </li>
+                                            <li class="cs-drop-li3">
+                                                <a class="cs-li-link cs-drop-link cs-drop-link3" href="/myrtle-beach/trusts">Trusts</a>
+                                            </li>
+                                            <li class="cs-drop-li3">
+                                                <a class="cs-li-link cs-drop-link cs-drop-link3" href="/myrtle-beach/wills">Wills</a>
+                                            </li>
+                                            <li class="cs-drop-li3">
+                                                <a class="cs-li-link cs-drop-link cs-drop-link3" href="/myrtle-beach/business">Business Law</a>
+                                            </li>
+                                            <li class="cs-drop-li3">
+                                                <a class="cs-li-link cs-drop-link cs-drop-link3" href="/myrtle-beach/power-of-attorney">Power Of Attorney</a>
+                                            </li>
+                                            <li class="cs-drop-li3">
+                                                <a class="cs-li-link cs-drop-link cs-drop-link3" href="/myrtle-beach/probate">Probate Lawyer</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="cs-drop-li">
+                                        <span class="cs-li-link cs-drop-link cs-drop3-main">
+                                            North Myrtle <!--<img alt="dropdown icon" decoding="async" height="15" src="" width="15" aria-hidden="true" class="cs-drop-icon">-->
+                                        </span>
+                                        <ul class="cs-drop3">
+                                            <li class="cs-drop-li3">
+                                                <a class="cs-li-link cs-drop-link cs-drop-link3" href="/north-myrtle">Estate Planning</a>
+                                            </li>
+                                            <li class="cs-drop-li3">
+                                                <a class="cs-li-link cs-drop-link cs-drop-link3" href="/north-myrtle/contracts/">Contract Law</a>
+                                            </li>
+                                            <li class="cs-drop-li3">
+                                                <a class="cs-li-link cs-drop-link cs-drop-link3" href="/north-myrtle/business/">Business Law</a>
+                                            </li>
+                                            <li class="cs-drop-li3">
+                                                <a class="cs-li-link cs-drop-link cs-drop-link3" href="/north-myrtle/probate/">Probate Lawyer</a>
+                                            </li>
+                                            <li class="cs-drop-li3">
+                                                <a class="cs-li-link cs-drop-link cs-drop-link3" href="/north-myrtle/trusts/">Trusts</a>
+                                            </li>
+                                            <li class="cs-drop-li3">
+                                                <a class="cs-li-link cs-drop-link cs-drop-link3" href="/north-myrtle/wills/">Wills</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="cs-drop-li">
+                                        <span class="cs-li-link cs-drop-link cs-drop3-main">
+                                            Surfside Beach <!--<img alt="dropdown icon" decoding="async" height="15" src="/assets/images/chev-down.svg" width="15" aria-hidden="true" class="cs-drop-icon">-->
+                                        </span>
+                                        <ul class="cs-drop3">
+                                            <li class="cs-drop-li3">
+                                                <a class="cs-li-link cs-drop-link cs-drop-link3" href="/surfside-beach/trusts">Trust Lawyer</a>
+                                            </li>
+                                            <li class="cs-drop-li3">
+                                                <a class="cs-li-link cs-drop-link cs-drop-link3" href="/surfside-beach">Estate Planning</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="cs-drop-li">
+                                        <span class="cs-li-link cs-drop-link cs-drop3-main">
+                                            Leland <!--<img alt="dropdown icon" decoding="async" height="15" src="/assets/images/chev-down.svg" width="15" aria-hidden="true" class="cs-drop-icon">-->
+                                        </span>
+                                        <ul class="cs-drop3">
+                                            <li class="cs-drop-li3">
+                                                <a class="cs-li-link cs-drop-link cs-drop-link3" href="/leland/business/">Business Law</a>
+                                            </li>
+                                            <li class="cs-drop-li3">
+                                                <a class="cs-li-link cs-drop-link cs-drop-link3" href="/leland/">Estate Planning</a>
+                                            </li>
+                                            <li class="cs-drop-li3">
+                                                <a class="cs-li-link cs-drop-link cs-drop-link3" href="/leland/power-of-attorney/">Power of Attorney</a>
+                                            </li>
+                                            <li class="cs-drop-li3">
+                                                <a class="cs-li-link cs-drop-link cs-drop-link3" href="/leland/probate/">Probate Attorney</a>
+                                            </li>
+                                            <li class="cs-drop-li3">
+                                                <a class="cs-li-link cs-drop-link cs-drop-link3" href="/leland/trusts/">Trusts</a>
+                                            </li>
+                                            <li class="cs-drop-li3">
+                                                <a class="cs-li-link cs-drop-link cs-drop-link3" href="/leland/wills/">Wills</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="cs-drop-li">
+                                        <span class="cs-li-link cs-drop-link cs-drop3-main">
+                                            Wilmington <img alt="dropdown icon" decoding="async" height="15" src="/assets/images/chev-down.svg" width="15" aria-hidden="true" class="cs-drop-icon">
+                                        </span>
+                                        <ul class="cs-drop3">
+                                            <li class="cs-drop-li3">
+                                                <a class="cs-li-link cs-drop-link cs-drop-link3" href="/wilmington/trusts">Trusts</a>
+                                            </li>
+                                            <li class="cs-drop-li3">
+                                                <a class="cs-li-link cs-drop-link cs-drop-link3" href="/wilmington/wills">Wills</a>
+                                            </li>
+                                            <li class="cs-drop-li3">
+                                                <a class="cs-li-link cs-drop-link cs-drop-link3" href="/wilmington/business">Business Law</a>
+                                            </li>
+                                            <li class="cs-drop-li3">
+                                                <a class="cs-li-link cs-drop-link cs-drop-link3" href="/wilmington/power-of-attorney">Power Of Attorney</a>
+                                            </li>
+                                            <li class="cs-drop-li3">
+                                                <a class="cs-li-link cs-drop-link cs-drop-link3" href="/wilmington/probate">Probate Lawyer</a>
+                                            </li>
+                                            <li class="cs-drop-li3">
+                                                <a class="cs-li-link cs-drop-link cs-drop-link3" href="/wilmington">Estate Planning</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="cs-drop-li">
+                                        <span class="cs-li-link cs-drop-link cs-drop3-main">
+                                            Murrells Inlet <img alt="dropdown icon" decoding="async" height="15" src="/assets/images/chev-down.svg" width="15" aria-hidden="true" class="cs-drop-icon">
+                                        </span>
+                                        <ul class="cs-drop3">
+                                            <li class="cs-drop-li3">
+                                                <a class="cs-li-link cs-drop-link cs-drop-link3" href="/murrells-inlet">Estate Planning</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="cs-li cs-dropdown" tabindex="0">
+                                <span class="cs-li-link">
+                                    Services <!--<img alt="dropdown icon" decoding="async" height="15" src="/assets/images/chev-down.svg" width="15" aria-hidden="true" class="cs-drop-icon">-->
+                                </span>
+                                <ul class="cs-drop-ul">
+                                    <li class="cs-drop-li">
+                                        <a class="cs-li-link cs-drop-link" href="/myrtle-beach">Estate Planning</a>
+                                    </li>
+                                    <li class="cs-drop-li">
+                                        <a class="cs-li-link cs-drop-link" href="/myrtle-beach/trusts">Trusts</a>
+                                    </li>
+                                    <li class="cs-drop-li">
+                                        <a class="cs-li-link cs-drop-link" href="/myrtle-beach/wills">Wills</a>
+                                    </li>
+                                    <li class="cs-drop-li">
+                                        <a class="cs-li-link cs-drop-link" href="/myrtle-beach/business">Business Law</a>
+                                    </li>
+                                    <li class="cs-drop-li">
+                                        <a class="cs-li-link cs-drop-link" href="/myrtle-beach/power-of-attorney">Power Of Attorney</a>
+                                    </li>
+                                    <li class="cs-drop-li">
+                                        <a class="cs-li-link cs-drop-link" href="/myrtle-beach/probate">Probate Attorney</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="cs-li">
+                                <a class="cs-li-link" href="/blog">Blog</a>
+                            </li>
+                            <li class="cs-li">
+                                <a class="cs-li-link" href="/contact">Contact</a>
                             </li>
                         </ul>
-                    </li>
-                    <li class="cs-li">
-                        <a href="/reviews/" class="cs-li-link {% if page.url == "/reviews/" %} cs-active {% endif %}" {% if page.url == "/reviews/" %} aria-current="page" {% endif %}>
-                            Reviews
-                        </a>
-                    </li>
-                    <li class="cs-li">
-                        <a href="/blog/" class="cs-li-link {% if page.url == "/blog/" %} cs-active {% endif %}" {% if page.url == "/blog/" %} aria-current="page" {% endif %}>
-                            Blog
-                        </a>
-                    </li>
-                    <li class="cs-li cs-hide-on-desktop">
-                        <a href="/contact/" class="cs-li-link {% if page.url == "/contact/" %} cs-active {% endif %}" {% if page.url == "/contact/" %} aria-current="page" {% endif %}>
-                            Contact
-                        </a>
-                    </li>
-                </ul>
+                    </div>
+                </nav>
+                <a class="cs-button-solid cs-nav-button" href="/contact">Book Consultation</a>
             </div>
-        </nav>
-        <a href="/contact/" class="cs-button-solid cs-nav-button">Contact Us</a>
-        <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
-        <button id="dark-mode-toggle" aria-label="dark mode toggle" aria-pressed="false">
-            <img class="cs-moon" aria-hidden="true" src="/assets/svgs/moon.svg" decoding="async" alt="" width="15" height="15">
-            <img class="cs-sun" aria-hidden="true" src="/assets/svgs/sun.svg" decoding="async" alt="" width="15" height="15">
-        </button>
-    </div>
-</header>
+        </header>

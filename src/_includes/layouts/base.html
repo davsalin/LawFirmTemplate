@@ -38,6 +38,30 @@
         <script defer src="/assets/js/dark.js"></script>
         <script defer src="/assets/js/nav.js"></script>
 
+        <style>
+        .skip {
+            position: absolute;
+            left: -9999px;
+            top: auto;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+        }
+        .skip:focus,
+        .skip:active {
+            left: 1rem;
+            top: 1rem;
+            width: auto;
+            height: auto;
+            padding: 0.5rem 1rem;
+            background: #ffffff;
+            color: #000000;
+            z-index: 10000;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+        </style>
+
         {% block head %}{% endblock %}
 
         <title>{{ title }}</title>
